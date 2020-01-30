@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -354,12 +359,12 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 55px;
 }
 
 .header {
   background-color: #ba68c8;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', cursive;
   color: #ffffff;
   text-decoration: none;
   -webkit-box-shadow: 0px 1px 20px #ba68c8;
@@ -395,10 +400,48 @@ template {
 }
 
 .nav__item {
-  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
   color: #ffffff;
   margin-right: 20px;
   text-decoration: none;
   font-size: 16px;
+  -webkit-box-shadow: 0px 1px 20px #ba68c8;
+          box-shadow: 0px 1px 20px #ba68c8;
+}
+
+.head__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.head__input {
+  padding: 10px 10px;
+  width: 95%;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Comfortaa', cursive;
+  border-color: #ba68c8;
+}
+
+.head__button {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 43px;
+  height: 43px;
+  background: #ffffff url("../img/search.png") no-repeat center;
+  border-radius: 5px;
+  border-color: #ba68c8;
 }
 /*# sourceMappingURL=style.css.map */
