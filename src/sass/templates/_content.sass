@@ -1,0 +1,52 @@
+.content
+    
+    margin-top: 50px
+    margin-bottom: 50px
+    &__img  
+        width: 38%
+        margin: 10px 10px 10px 10px
+        img
+            border-radius: 10px
+            border: 7px solid $gray
+            height: 100%
+    &__card
+        background-color: $white
+        color: $black
+        margin-top: 13px
+        margin-bottom: 13px
+        bottom: 10px
+        border: 7px solid $gray
+        border-radius: 15px
+        display: flex
+        flex-direction: row
+        width: 49%
+        height: 250px
+        text-decoration: none
+    &__text
+        margin: 10px 10px 10px 10px
+        font-family: 'Comfortaa', cursive
+        font-size: 14px
+        line-height: 1.3
+        outline: none
+        
+    &__button
+        display: flex
+        justify-content: center
+    &__internal
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__title
+        display: flex
+        justify-content: center
+        &::before, &::after
+            content: ''
+            width: 65px
+            height: 2px
+            margin: 7px 10px
+            background-color: $purple
