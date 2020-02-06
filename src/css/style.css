@@ -362,6 +362,10 @@ template {
   font-size: 20px;
 }
 
+button {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -415,6 +419,20 @@ a {
   font-family: 'Comfortaa', cursive;
   color: #d1d1d1;
   text-decoration: none;
+}
+
+.header__hidensocialin {
+  display: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #d1d1d1;
+  -webkit-transform-style: 0.3s;
+          transform-style: 0.3s;
+  border-bottom: 1px solid #7c00b9;
+}
+
+.header__hidensocialin:hover {
+  color: #ffffff;
 }
 
 .header__menu {
@@ -586,12 +604,13 @@ a {
 
 .content__img {
   width: 38%;
+  height: 92%;
   margin: 10px 10px 10px 10px;
 }
 
 .content__img img {
   border-radius: 10px;
-  border: 7px solid #4e4e4e;
+  border: 2px solid #4e4e4e;
   height: 100%;
 }
 
@@ -601,7 +620,7 @@ a {
   margin-top: 13px;
   margin-bottom: 13px;
   bottom: 10px;
-  border: 7px solid #4e4e4e;
+  border: 2px solid #4e4e4e;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +643,8 @@ a {
 }
 
 .content__button {
+  background-color: #d1d1d1;
+  color: #242222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,5 +803,157 @@ a {
   outline: none;
   -webkit-box-shadow: 2px 2px 2px 2px rgba(124, 0, 185, 0.2);
           box-shadow: 2px 2px 2px 2px rgba(124, 0, 185, 0.2);
+}
+
+@media screen and (max-width: 1300px) {
+  .content__card {
+    height: 190px;
+  }
+  .content__text {
+    font-size: 12px;
+  }
+  .content__button {
+    width: 200px;
+    height: 50px;
+  }
+  .content__img {
+    height: 89.5%;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .logo {
+    margin-left: 5px;
+  }
+  .content__text {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .content__img {
+    height: 41.5%;
+  }
+  .content__text {
+    font-size: 10px;
+  }
+  .content__button {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .head-video__container {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .logo {
+    display: none;
+  }
+  .nav__item {
+    font-size: 14px;
+  }
+  .head__search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .head__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .head__button {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .head__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .head__video {
+    margin-top: 150px;
+  }
+  .head-video__container {
+    height: 350px;
+  }
+  .header__text {
+    font-size: 10px;
+  }
+  .content__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .button {
+    font-size: 17px;
+  }
+  .header__hidensocialin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: block;
+  }
+  .header__socialin img {
+    display: none;
+  }
+  .header__nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .header__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__text {
+    display: none;
+  }
+  .social {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5px;
+  }
+  .nav__item {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .head-video__container {
+    height: 220px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
