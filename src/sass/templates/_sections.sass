@@ -1,0 +1,68 @@
+.sections
+    &__title
+        display: flex
+        justify-content: center
+        &::before, &::after
+            content: ''
+            width: 65px
+            height: 2px
+            margin: 7px 10px
+            background-color: $purple
+    &__container
+        display: flex
+        justify-content: space-around
+    &__box
+        display: flex
+        
+        flex-direction: column
+        
+        width: 300px
+        height: 300px
+        background-color: $white
+        border: 2px solid $gray
+        border-radius: 10px
+        position: relative
+        -webkit-transition: all 200ms ease-in
+        -webkit-transform: scale(1)
+        -ms-transition: all 200ms ease-in
+        -ms-transform: scale(1)
+        -moz-transition: all 200ms ease-in
+        -moz-transform: scale(1)
+        transition: all 200ms ease-in
+        transform: scale(1)
+        &:hover
+            box-shadow: 0px 0px 20px $black
+            z-index: 2
+            -webkit-transition: all 200ms ease-in
+            -webkit-transform: scale(1.5)
+            -ms-transition: all 200ms ease-in
+            -ms-transform: scale(1.5)
+            -moz-transition: all 200ms ease-in
+            -moz-transform: scale(1.5)
+            transition: all 200ms ease-in
+            transform: scale(1.5)
+    &__titlecard
+        text-align: center
+        text-transform: uppercase   
+        margin-top: 20px
+        font-family: 'Comfortaa', cursive
+        font-size: 16px   
+        font-weight: 900   
+    &__img
+        margin: auto
+        width: 180px
+        height: 180px
+        border: blur(2px)
+    &__button
+        margin: auto
+        display: flex
+        justify-content: center
+        align-items: center   
+        height: 50px
+        background-color: $white
+        color: $gray
+        border-color: $gray
+.imgsections
+    
+    width: 100%
+    height: 100%
