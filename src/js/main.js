@@ -19,3 +19,25 @@ var mySwiper = new Swiper(".swiper-container", {
         prevEl: '.swiper-button-prev',
       }
   });
+
+/*$(function(){
+
+  $('.load-more').on(click, function(){
+    const btn = $(this);
+    const loader = btn.find('.span');
+    $.ajax({
+      url: '/load.html',
+      type: 'GET',
+      beforeSend: function(){
+        
+      },
+      succsess: function(response){
+
+      },
+      error: function(){
+        alert('Error');
+      }
+    });
+  });
+
+});*/
