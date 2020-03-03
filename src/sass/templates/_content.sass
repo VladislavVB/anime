@@ -1,9 +1,10 @@
+
 .content
     
     margin-top: 50px
     margin-bottom: 50px
     &__img  
-        width: 38%
+        
         height: 100%
         
         img
@@ -17,7 +18,7 @@
         margin-bottom: 13px
         bottom: 10px
         border: 2px solid $gray
-        border-radius: 15px
+        border-radius: 8px
         display: flex
         flex-direction: row
         width: 49%
@@ -31,6 +32,7 @@
         outline: none
         
     &__button
+        border-radius: 5px
         background-color: $headerwhite
         color: $black
         display: flex
@@ -41,6 +43,7 @@
         justify-content: center
         align-items: center
     &__list
+        margin-bottom: 45px
         display: flex
         justify-content: space-between
         flex-wrap: wrap
@@ -53,3 +56,37 @@
             height: 2px
             margin: 7px 10px
             background-color: $purple
+
+.swiper
+    &-pagination
+        &-bullet  
+            font-family: 'Comfortaa', cursive
+            width: 25px 
+            height: 25px 
+            text-align: center 
+            line-height: 25px 
+            font-size: 11px 
+            color: #000
+            opacity: 1 
+            background: rgba($gray, 0.9)
+
+.swiper
+    &-pagination
+        &-bullet
+            &-active  
+                font-family: 'Comfortaa', cursive
+                color: #fff
+                background: rgba($purple, 0.9)
+.swiper-container-horizontal>.swiper-pagination-bullets
+    bottom: 0
+.swiper-button-next, .swiper-button-prev
+    top: 98%
+.swiper-button-prev, .swiper-button-next
+    color: $black
+    font-family: 'Comfortaa', cursive
+    width: 20px
+    &:hover
+        color: $purple
+.swiper-container-horizontal > .swiper-pagination-bullets
+    bottom: 17px
+
