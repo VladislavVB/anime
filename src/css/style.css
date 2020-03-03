@@ -1019,6 +1019,10 @@ a {
   font-family: 'Comfortaa', cursive;
 }
 
+.onepx {
+  height: 200px;
+}
+
 @media screen and (max-width: 1300px) {
   .content__card {
     height: 190px;
