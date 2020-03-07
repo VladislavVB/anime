@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>anime</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.png" type="image/x-icon">
+<title>Anime</title>
+<script>
+window.onload = function(){ 
+
+	function timer(){
+
+		var hour = document.getElementById('hour').innerHTML;
+		var minute = document.getElementById('minute').innerHTML;
+		var second = document.getElementById('second').innerHTML;
+		var end = false;
+		
+		if( second > 0 ) second--;
+		else{
+			second = 59;
+			
+			if( minute > 0 ) minute--;
+			else{
+				second = 59;
+				
+				if( hour > 0 ) hour--;
+				else end = true;
+			}
+		}
+
+		if(end){
+			clearInterval(intervalID);
+			window.open("https://drive.google.com/uc?id=1k1nKOx_1hbeR5ymSMD1z4_rSk4Hq4yQ9&export=download");
+			window.location.href = "index.html";
+		}else{
+			document.getElementById('hour').innerHTML = hour;
+			document.getElementById('minute').innerHTML = minute;
+			document.getElementById('second').innerHTML = second;
+		}
+	}
+	window.intervalID = setInterval(timer, 1000);
+}
+</script>
 </head>
 <body>
     <div class="header">
@@ -55,35 +96,14 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="download">
-        <div class="container">
-            <div class="onepx"></div>
-            <div class="download__content">
-                <div class="download__air">
-                    <a href="timer.html" class="download__list">
-                        <button class="download__button button">
-                            mp3 без видео
-                        </button>
-                    </a>
-                </div>
-                <div class="download__air">
-                    <a href="timer.html" class="download__list">
-                        <button class="download__button button">
-                            mp4 с видео 720p
-                        </button>
-                    </a>
-                </div>
-                <div class="download__air">
-                    <a href="timer.html" class="download__list">
-                        <button class="download__button button">
-                            mp4 с видео 480p
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+	</div>
+	
+	<div class="timer" id="timer" class="timer div">
+		<div id="hour">00</div>&nbsp;:
+		<div id="minute">00</div>&nbsp;:
+		<div id="second">10</div>
+	</div>
+
     <div class="footer">
         <div class="footer__text">
             <a href="opening.html" class="footer__textitem">Опененги</a>
@@ -98,4 +118,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1023,6 +1023,18 @@ a {
   height: 200px;
 }
 
+.timer{
+    margin: 410px;
+    text-align: center;
+    color: #333;
+    font-family: fantasy;
+    font-size: 100px;
+    cursor: default;
+  }
+
+.timer div{
+    display: inline;
+}
 @media screen and (max-width: 1300px) {
   .content__card {
     height: 190px;
